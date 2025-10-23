@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(16, 15, 15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .carta{
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 30px;
+background-color: rgb(227, 227, 152);
+height: 40vh;
+width: 70vw;
+        }
+        .giro{
+                  animation: girinho 1s;
+        
+        }
+        .triangulo{
+            border-radius: 30px;
+            position: relative;
+             width: 0;
+       height: 0;
+  border-top: 31vw solid rgb(188, 188, 126);
+  border-right: 35vw solid rgba(255, 192, 203, 0);
+  border-left: 35vw solid #44ffab00;
+        }
+        .circulo{
+            height: 7vh;
+            width: 8vw;
+            background-color: red;
+            position: relative;
+            top: -6vh;
+            left: -4svw;
+            border-radius: 50%;
+        }
+        #h1{
+            color: #f0f8ff;
+        }
+        #cartada{
+            display: none;
+            height: 90vh;
+            width: 70vh;
+            background-color: rgb(227, 227, 152);
+             font-family: "Agbalumo", system-ui;
+             text-align: center;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             border-radius: 30px;
+             gap: 3vh;
+
+        }
+        button{
+            color: #f0f8ff;
+            background-color: rgb(19, 17, 17);
+            width: 40%;
+            height: 8%;
+            border-radius: 20px;
+        }
+        img{
+            width: 50%;
+            height: 50%;
+        }
+        @keyframes sumi {
+            0%{opacity: 1;}
+            50%{opacity: 0.5;}
+            100%{display:none}
+            
+        }
+        @keyframes trigui {
+            0%{opacity: 1;}
+            50%{opacity: 0.6; transform: scale (-1); top: -12vh;}
+            80%{transform: scale(-1); opacity:1; top: -24vh; }
+100%{display: none;}
+            
+        }
+        @keyframes girinho {
+            0%,100%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(15deg);
+            }
+            75%{
+                transform: rotate(-15deg);
+            }
+        }
+        .trigo{animation: trigui 1.5s ease-in-out forwards;
+            animation-delay: 0.5s;}
+
+             .bot{
+                animation: sumi 0.5s ease-in-out forwards;
+            animation-delay: 0.5s;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="carta" class="carta">
+        <div id="triangulo" class="triangulo">
+            <div id="circ" class="circulo"></div>
+        </div>
+    </div>
+    <h1 id="h1">clique-me </h1>
+    <div id="cartada">
+        <h1>PARA HILQUIAS</h1>
+        <p>EU TE AMO HILQUIAS CASA COMIGOOOOOOOOOO?<br> ass guilherme</p>
+        <img src="IMG_20251022_211749041-removebg-preview.png" alt="">
+        <button id="sim">sim</button>
+        <button id="nao">nao</button>
+    </div>
+    <script>
+        let carta = document.getElementById
+        ("carta")
+        let tri = document.getElementById("triangulo")
+        let botao = document.getElementById("circ")
+           let conta = 1
+           let cartada = document.getElementById("cartada")
+           let h1 = document.getElementById("h1")
+           let sim =document.getElementById("sim")
+           let nao =document.getElementById("nao")
+        carta.addEventListener("click", () => {
+  setTimeout(() => {
+            conta++
+        }, 2000);
+     if (conta<3){
+        carta.classList.remove("giro")
+        void carta.offsetWidth;
+    carta.classList.add("giro")
+     }
+     else{
+tri.classList.remove("trigo")
+        void tri.offsetWidth;
+   tri.classList.add("trigo")
+    botao.classList.remove("bot")
+        void botao.offsetWidth;
+    botao.classList.add("bot")
+    setTimeout(()=>{
+carta.style.display="none"
+h1.style.display ="none"
+cartada.style.display =" flex"
+
+    }, 1500)
+    
+     }
+
+        })
+        let conta2 = 0
+        nao.addEventListener("click", ()=>{
+            
+            conta2++
+if (conta2== 1){
+alert("NAO ME RECULSE")
+}
+else if (conta2 == 2){
+    alert("EU JA AVISEI NAO ME RECUSE")
+}
+else if (conta2 == 3){
+    alert("AHHHHHHH CARA, NAO A ESCOLHA AQUI")
+    nao.style.display="none"
+}
+        })
+        sim.addEventListener("click", ()=>{
+            alert(
+`Hilquias sempre teve aquele jeito desajeitado de se perder nos próprios pensamentos,
+e Guilherme era o tipo de pessoa que iluminava qualquer sala só de entrar.
+
+Um dia, na cafeteria, Hilquias comprou seu café com as mãos tremendo,
+e Guilherme, sem querer, derrubou o próprio chocolate quente bem perto dele.
+O olhar que se cruzou foi como se o universo tivesse apertado "play" só para eles.
+
+"Desculpa, eu sou meio desastrado", disse Guilherme.
+"Não tem problema… eu gosto de chocolate quente espalhado de vez em quando", riu Hilquias.
+
+Cada toque, cada risada, cada olhar roubado... era como se o mundo tivesse diminuído para caber só eles dois.
+
+Numa tarde chuvosa, Hilquias segurou a mão de Guilherme:
+"Guilherme… eu acho que me apaixonei por você."
+"Eu também, Hilquias… desde o café derramado."
+
+E ali, entre risadas e o cheiro de chocolate quente,
+eles descobriram que algumas histórias de amor só precisam do momento certo e do coração aberto.`
+);
+nao.style.display="none"
+        })
+
+    </script>
+</body>
+</html>
